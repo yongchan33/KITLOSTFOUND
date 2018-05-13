@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/settingmyinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="내 정보" />
+
+        <Button
+            android:id="@+id/settingsignout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="로그아웃" />
+
+        <Button
+            android:id="@+id/settingback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:onClick="onBack "/>
+
+    </LinearLayout>
+
+</FrameLayout>

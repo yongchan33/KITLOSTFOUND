@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>물건 찾기</item>
+        <item>주인 찾기</item>
+        <item>벼룩시장</item>
+    </string-array>
+    
+    <string-array name="type">
+        <item>전자기기</item>
+    </string-array>
+
+    <string-array name="reward">
+        <item>500원</item>
+        <item>1000원</item>
+        <item>3000원</item>
+        <item>5000원</item>
+        <item>10000원</item>
+    </string-array>
+</resources>

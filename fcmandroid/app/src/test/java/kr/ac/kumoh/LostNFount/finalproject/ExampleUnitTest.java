@@ -1,4 +1,4 @@
-package kr.ac.kumoh.s20110214.fcmandroid;
+package kr.ac.kumoh.LostNFount.finalproject;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
+    public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
     }
 }

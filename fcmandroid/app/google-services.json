@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "1013698493043",
-    "firebase_url": "https://android-fcm-6ed61.firebaseio.com",
-    "project_id": "android-fcm-6ed61",
-    "storage_bucket": "android-fcm-6ed61.appspot.com"
+    "project_number": "967100971626",
+    "firebase_url": "https://lostnfound-d330d.firebaseio.com",
+    "project_id": "lostnfound-d330d",
+    "storage_bucket": "lostnfound-d330d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1013698493043:android:2052e924b7ceed20",
+        "mobilesdk_app_id": "1:967100971626:android:e334064f31a0f73a",
         "android_client_info": {
-          "package_name": "kr.ac.kumoh.s20130271.fcmforandroid"
+          "package_name": "kr.ac.kumoh.LostNFound.finalproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1013698493043-uad18ok7k4gh1mnqap7k47p6u22i8bbe.apps.googleusercontent.com",
+          "client_id": "967100971626-7k1lngud0dspb6rcdnp7k0klmuc1cjn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.kumoh.LostNFound.finalproject",
+            "certificate_hash": "2ac4667b89628688016ff69b9746f9ec6f2eaa43"
+          }
+        },
+        {
+          "client_id": "967100971626-u365evb471meu0p0do6cura5mttma1mr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-lVTXSFEG7gw5rK9yChBX3IeSCWGtTgM"
+          "current_key": "AIzaSyBzfajVnv7BOj3HJR1Hx0WirUSqZ8pwoT4"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967100971626-u365evb471meu0p0do6cura5mttma1mr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
