@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>물건찾기</item>
+        <item>주인찾기</item>
+    </string-array>
+    
+    <string-array name="findtype">
+        <item>학용품</item>
+        <item>전자기기</item>
+        <item>의류</item>
+        <item>패션잡화</item>
+        <item>도서</item>
+        <item>현금</item>
+        <item>카드</item>
+        <item>기타물품</item>
+    </string-array>
+
+    <string-array name="selltype">
+        <item>전자기기</item>
+        <item>의류</item>
+        <item>패션잡화</item>
+        <item>티켓,상품권</item>
+        <item>생활용품</item>
+        <item>도서</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="reward">
+        <item>없음</item>
+        <item>500원</item>
+        <item>1000원</item>
+        <item>3000원</item>
+    </string-array>
+
+    <string-array name="trademethod">
+        <item>직거래</item>
+        <item>택배 거래</item>
+    </string-array>
+</resources>

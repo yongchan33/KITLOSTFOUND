@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4169e1"
+        android:queryHint="검색어를 입력하세요." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="물건찾기" />
+
+        <!--경계선 표시 리니어 레이아웃-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            android:padding="0.5dp"></LinearLayout>
+
+        <Button
+            android:id="@+id/bt_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="주인찾기" />
+
+        <!--경계선 표시 리니어 레이아웃-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            android:padding="0.5dp"></LinearLayout>
+
+        <Button
+            android:id="@+id/bt_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="벼룩시장" />
+
+        <!--경계선 표시 리니어 레이아웃-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            android:padding="0.5dp"></LinearLayout>
+
+        <Button
+            android:id="@+id/bt_tab4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="설정" />
+    </LinearLayout>
+
+    <!--경계선 표시 리니어 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d9d9d9"
+        android:orientation="horizontal"
+        android:padding="0.5dp"></LinearLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#4db8ff"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/settingmyinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMoveMyInfo"
+                android:text="내 정보" />
+
+            <Button
+                android:id="@+id/settinglogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onLogOut"
+                android:text="로그아웃" />
+
+            <Button
+                android:id="@+id/settingleave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMoveLeave"
+                android:text="회원탈퇴" />
+
+            <Button
+                android:id="@+id/settingback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSettingBack"
+                android:text="닫기" />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

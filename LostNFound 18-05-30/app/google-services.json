@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "967100971626",
+    "firebase_url": "https://lostnfound-d330d.firebaseio.com",
+    "project_id": "lostnfound-d330d",
+    "storage_bucket": "lostnfound-d330d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967100971626:android:52d94a0ad1639008",
+        "android_client_info": {
+          "package_name": "kr.ac.kumoh.LostNFound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967100971626-u365evb471meu0p0do6cura5mttma1mr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzfajVnv7BOj3HJR1Hx0WirUSqZ8pwoT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
