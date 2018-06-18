@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <ImageButton
+                    android:id="@+id/writeback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backbt"
+                    android:gravity="center"
+                    android:onClick="onWriteBack"
+                    app:scale_height="6"
+                    app:scale_left="6"
+                    app:scale_textsize="6"
+                    app:scale_top="2"
+                    app:scale_width="8" />
+
+                <!--경계선 표시 리니어 레이아웃-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d9d9d9"
+                    android:padding="0.5dp"
+                    app:scale_height="10"
+                    app:scale_left="21"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="0.5"></LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/banner2"
+                    android:gravity="center"
+                    app:scale_height="6"
+                    app:scale_left="25"
+                    app:scale_textsize="6"
+                    app:scale_top="2.6"
+                    app:scale_width="50" />
+
+                <!--경계선 표시 리니어 레이아웃-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d9d9d9"
+                    android:padding="0.5dp"
+                    app:scale_height="10"
+                    app:scale_left="79.5"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="0.5"></LinearLayout>
+
+                <Button
+                    android:id="@+id/btuplode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/uploadbt"
+                    android:onClick="onWrite"
+                    app:scale_height="10"
+                    app:scale_left="80"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="20" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+
+        <!--경계선 표시 리니어 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d9d9d9"
+            android:padding="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <EditText
+                        android:id="@+id/notice_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/textline"
+                        android:gravity="start"
+                        android:hint="게시물 제목"
+                        app:scale_height="10"
+                        app:scale_left="0"
+                        app:scale_textsize="6"
+                        app:scale_top="0"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="50">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/blueicon"
+                        app:scale_height="8.5"
+                        app:scale_left="1.5"
+                        app:scale_top="1"
+                        app:scale_width="8.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="카테고리 선택 "
+                        app:scale_height="10"
+                        app:scale_left="10"
+                        app:scale_textsize="6"
+                        app:scale_top="1"
+                        app:scale_width="40" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/category" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="50">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/blueicon"
+                        app:scale_height="8.5"
+                        app:scale_left="1.5"
+                        app:scale_top="1"
+                        app:scale_width="8.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="종류 선택         "
+                        app:scale_height="10"
+                        app:scale_left="10"
+                        app:scale_textsize="6"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <Spinner
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/findtype" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/blueicon"
+                        app:scale_height="8.5"
+                        app:scale_left="1.8"
+                        app:scale_top="1"
+                        app:scale_width="8.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="분실 날짜, 시간 선택"
+                        app:scale_height="10"
+                        app:scale_left="10"
+                        app:scale_textsize="6"
+                        app:scale_top="1"
+                        app:scale_width="51" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <Button
+                        android:id="@+id/btlostdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calenderbt"
+                        android:onClick="onLostDate"
+                        app:scale_height="10"
+                        app:scale_left="2"
+                        app:scale_top="0"
+                        app:scale_width="13" />
+
+                    <TextView
+                        android:id="@+id/lostdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="선택 날짜 없음"
+                        android:paddingLeft="2sp"
+                        app:scale_height="10"
+                        app:scale_left="17"
+                        app:scale_textsize="5"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <Button
+                        android:id="@+id/btlosttime"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/clockbt"
+                        android:onClick="onLostTime"
+                        app:scale_height="10"
+                        app:scale_left="2"
+                        app:scale_top="0"
+                        app:scale_width="13" />
+
+                    <TextView
+                        android:id="@+id/losttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="선택 시간 없음"
+                        android:paddingLeft="2sp"
+                        app:scale_height="10"
+                        app:scale_left="17"
+                        app:scale_textsize="5"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/blueicon"
+                        app:scale_height="8.5"
+                        app:scale_left="1.5"
+                        app:scale_top="1"
+                        app:scale_width="8.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="분실 위치 선택"
+                        app:scale_height="10"
+                        app:scale_left="10"
+                        app:scale_textsize="6"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <Button
+                        android:id="@+id/btselectmap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mapbt"
+                        android:onClick="onMoveSelectMap"
+                        app:scale_height="10"
+                        app:scale_left="2"
+                        app:scale_top="0"
+                        app:scale_width="13" />
+
+                    <TextView
+                        android:id="@+id/maptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="선택 위치 없음"
+                        android:paddingLeft="2sp"
+                        app:scale_height="10"
+                        app:scale_left="17"
+                        app:scale_textsize="5"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="50">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/blueicon"
+                        app:scale_height="8.5"
+                        app:scale_left="1.5"
+                        app:scale_top="1"
+                        app:scale_width="8.5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사례금 선택"
+                        app:scale_height="10"
+                        app:scale_left="10"
+                        app:scale_textsize="6"
+                        app:scale_top="1"
+                        app:scale_width="100" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <Spinner
+                    android:id="@+id/reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/reward" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="70"
+                    app:scale_base_width="100">
+
+                    <EditText
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/thinborder"
+                        android:gravity="start"
+                        android:hint="게시물 내용"
+                        android:scrollbars="vertical"
+                        app:scale_height="70"
+                        app:scale_left="0"
+                        app:scale_textsize="6"
+                        app:scale_top="0"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </LinearLayout>
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="15"
+                app:scale_base_width="100">
+
+                <Button
+                    android:id="@+id/chooseimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/photobt"
+                    android:onClick="onMoveGallery"
+                    app:scale_height="15"
+                    app:scale_left="2"
+                    app:scale_top="0"
+                    app:scale_width="15" />
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/preimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/preimg2"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/preimg3"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

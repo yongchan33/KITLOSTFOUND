@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디 : "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <TextView
+                    android:id="@+id/myid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="64" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임 : "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <EditText
+                    android:id="@+id/mynickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="64" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myinfobuttonshape"
+                    android:onClick="onEditNickname"
+                    android:text="닉네임 변경"
+                    app:scale_height="10"
+                    app:scale_left="65"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="34" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호: "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <EditText
+                    android:id="@+id/mypassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="64" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="새 비밀번호: "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <EditText
+                    android:id="@+id/newpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="64" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 확인: "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <EditText
+                    android:id="@+id/newpasscheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="64" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myinfobuttonshape"
+                    android:onClick="onEditPassword"
+                    android:text="비밀번호 변경"
+                    app:scale_height="10"
+                    app:scale_left="61"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="38" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일: "
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="20" />
+
+                <TextView
+                    android:id="@+id/myemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="25"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="75" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMyInfoBack"
+                android:text="뒤로" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

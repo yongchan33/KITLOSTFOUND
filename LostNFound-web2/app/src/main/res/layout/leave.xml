@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="36"
+                app:scale_base_width="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="정말로 회원탈퇴를 하시겠습니까?"
+                    app:scale_height="9"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="0"
+                    app:scale_width="100" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="회원탈퇴시 모든 정보가 사라집니다."
+                    app:scale_height="9"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="9"
+                    app:scale_width="100" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="회원탈퇴를 원할경우 비밀번호를 입력하세요."
+                    app:scale_height="18"
+                    app:scale_left="0"
+                    app:scale_textsize="6"
+                    app:scale_top="18"
+                    app:scale_width="100" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="60dp">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="10"
+                    app:scale_base_width="100">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="비밀번호 : "
+                        app:scale_height="10"
+                        app:scale_left="0"
+                        app:scale_textsize="6"
+                        app:scale_top="0"
+                        app:scale_width="30" />
+
+                    <EditText
+                        android:id="@+id/mypassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/textline"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPassword"
+                        app:scale_height="10"
+                        app:scale_left="30"
+                        app:scale_textsize="6"
+                        app:scale_top="0"
+                        app:scale_width="70" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="40"
+                    app:scale_base_width="100">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onLeave"
+                        android:text="탈퇴"
+                        app:scale_height="16"
+                        app:scale_left="0"
+                        app:scale_textsize="6"
+                        app:scale_top="0"
+                        app:scale_width="100" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onLeaveBack"
+                        android:text="뒤로"
+                        app:scale_height="16"
+                        app:scale_left="0"
+                        app:scale_textsize="6"
+                        app:scale_top="16"
+                        app:scale_width="100" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

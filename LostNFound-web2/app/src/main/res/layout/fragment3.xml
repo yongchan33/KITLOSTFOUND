@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="1"
+            app:scale_base_width="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/frag3divider1"
+                app:scale_height="0.8"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="10" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <ListView
+            android:id="@+id/frag3find1list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5dp" />
+
+        <!--경계선 표시 리니어 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="5dp"></LinearLayout>
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="1"
+            app:scale_base_width="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/frag3divider2"
+                app:scale_height="0.8"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="10" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <ListView
+            android:id="@+id/frag3find2list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>

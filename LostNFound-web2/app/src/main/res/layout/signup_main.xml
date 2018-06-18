@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="kr.ac.kumoh.LostNFound.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="15"
+            app:scale_base_width="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logintopbanner"
+                app:scale_height="15"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="100" />
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="61"
+            app:scale_base_width="100">
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextboarder"
+                android:hint="아이디"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_height="12"
+                app:scale_left="11"
+                app:scale_textsize="5"
+                app:scale_top="5"
+                app:scale_width="78" />
+
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextboarder"
+                android:hint="닉네임"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_height="12"
+                app:scale_left="11"
+                app:scale_textsize="5"
+                app:scale_top="19"
+                app:scale_width="78" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextboarder"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_height="12"
+                app:scale_left="11"
+                app:scale_textsize="5"
+                app:scale_top="33"
+                app:scale_width="78" />
+
+            <EditText
+                android:id="@+id/passcheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextboarder"
+                android:hint="비밀번호 재확인"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_height="12"
+                app:scale_left="11"
+                app:scale_textsize="5"
+                app:scale_top="47"
+                app:scale_width="78" />
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="14"
+                app:scale_base_width="100">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextboarder"
+                    android:hint="\@kumoh.ac.kr"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    app:scale_height="12"
+                    app:scale_left="11"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="59" />
+
+                <Button
+                    android:id="@+id/emailcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signupbuttonshape"
+                    android:onClick="onEmailCheck"
+                    android:text="발송"
+                    app:scale_height="12"
+                    app:scale_left="71"
+                    app:scale_textsize="4.5"
+                    app:scale_top="0"
+                    app:scale_width="17" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="26"
+                app:scale_base_width="100">
+
+                <EditText
+                    android:id="@+id/authnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextboarder"
+                    android:hint="인증번호"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    app:scale_height="12"
+                    app:scale_left="11"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="59" />
+
+                <Button
+                    android:id="@+id/authcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signupbuttonshape"
+                    android:onClick="onAuthCheck"
+                    android:text="확인"
+                    app:scale_height="12"
+                    app:scale_left="71"
+                    app:scale_textsize="4.5"
+                    app:scale_top="0"
+                    app:scale_width="17" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="14"
+                app:scale_base_width="100">
+
+                <Button
+                    android:id="@+id/signupback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cancel"
+                    android:onClick="onSignUpBack"
+                    app:scale_height="12"
+                    app:scale_left="12"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="38" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/newid"
+                    app:scale_height="12"
+                    app:scale_left="51"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="38"
+                    android:onClick="onSignUp"/>
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

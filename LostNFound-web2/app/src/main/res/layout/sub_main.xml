@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="11"
+            app:scale_base_width="100">
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#21bdff"
+                android:queryHint="검색어를 입력하세요."
+                app:scale_height="11"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="100"/>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                app:scale_base_height="13"
+                app:scale_base_width="100">
+
+                <Button
+                    android:id="@+id/bt_tab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clicktab1"
+                    app:scale_height="13"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    app:scale_width="25" />
+
+                <Button
+                    android:id="@+id/bt_tab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clicktab2"
+                    app:scale_height="13"
+                    app:scale_left="25"
+                    app:scale_top="0"
+                    app:scale_width="25" />
+
+                <Button
+                    android:id="@+id/bt_tab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clicktab3"
+                    app:scale_height="13"
+                    app:scale_left="50"
+                    app:scale_top="0"
+                    app:scale_width="25" />
+
+                <Button
+                    android:id="@+id/bt_tab4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/clicktab4"
+                    app:scale_height="13"
+                    app:scale_left="75"
+                    app:scale_top="0"
+                    app:scale_width="25" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <!--사이드 바-->
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sidebarbg"
+                    android:orientation="vertical">
+
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:scale_base_height="230"
+                        app:scale_base_width="100">
+
+                        <Button
+                            android:id="@+id/settingmyinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/myinfo"
+                            android:onClick="onMoveMyInfo"
+                            app:scale_height="30"
+                            app:scale_left="4"
+                            app:scale_top="10"
+                            app:scale_width="90" />
+
+                        <Button
+                            android:id="@+id/settinglogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/logout"
+                            android:onClick="onLogOut"
+                            app:scale_height="30"
+                            app:scale_left="4"
+                            app:scale_top="45"
+                            app:scale_width="90" />
+
+                        <Button
+                            android:id="@+id/settingleave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/leave"
+                            android:onClick="onMoveLeave"
+                            app:scale_height="30"
+                            app:scale_left="4"
+                            app:scale_top="80"
+                            app:scale_width="90" />
+
+                        <Button
+                            android:id="@+id/settingback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/close"
+                            android:onClick="onSettingBack"
+                            app:scale_height="30"
+                            app:scale_left="4"
+                            app:scale_top="115"
+                            app:scale_width="90" />
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+
+                        <com.ssomai.android.scalablelayout.ScalableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:scale_base_height="30"
+                            app:scale_base_width="100">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/kit"
+                                app:scale_height="30"
+                                app:scale_left="0"
+                                app:scale_top="0"
+                                app:scale_width="100" />
+                        </com.ssomai.android.scalablelayout.ScalableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </android.support.v4.widget.DrawerLayout>
+    </LinearLayout>
+</LinearLayout>

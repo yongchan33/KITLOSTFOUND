@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="kr.ac.kumoh.LostNFound.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCF"
+        android:orientation="horizontal">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="15"
+            app:scale_base_width="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logintopbanner"
+                app:scale_height="15"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="100" />
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="60dp">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="15"
+            app:scale_base_width="100">
+
+            <EditText
+                android:id="@+id/loginid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittextboarder"
+                android:hint="ID"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_textsize="7"
+                app:scale_height="15"
+                app:scale_left="11"
+                app:scale_top="0"
+                app:scale_width="78" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="15"
+            app:scale_base_width="100">
+
+            <EditText
+                android:id="@+id/loginpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittextboarder"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                app:scale_textsize="7"
+                app:scale_height="15"
+                app:scale_left="11"
+                app:scale_top="0"
+                app:scale_width="78" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="30dp">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="10"
+            app:scale_base_width="100">
+
+            <CheckBox
+                android:id="@+id/autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 로그인"
+                app:scale_height="10"
+                app:scale_left="10"
+                app:scale_textsize="5"
+                app:scale_top="0"
+                app:scale_width="40" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbuttonshape"
+                android:text="회원가입"
+                app:scale_textsize="5"
+                app:scale_height="10"
+                app:scale_left="55"
+                app:scale_top="0"
+                app:scale_width="34"
+                android:onClick="onMoveSignUp"/>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="14"
+        app:scale_base_width="100">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/loginbt"
+            app:scale_height="14"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="78"
+            android:onClick="onLogIn"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</LinearLayout>

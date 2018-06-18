@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="kr.ac.kumoh.LostNFound.FindOwnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="10"
+            app:scale_base_width="100">
+
+            <TextView
+                android:id="@+id/fotitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/thinborder"
+                android:hint="게시물 제목"
+                app:scale_height="10"
+                app:scale_left="0"
+                app:scale_textsize="6"
+                app:scale_top="0"
+                app:scale_width="100" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/foimg1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/foimg2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/foimg3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blueicon"
+                    app:scale_height="8.5"
+                    app:scale_left="1.5"
+                    app:scale_top="0"
+                    app:scale_width="8.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="카테고리 : "
+                    app:scale_height="10"
+                    app:scale_left="10"
+                    app:scale_textsize="5"
+                    app:scale_top="1"
+                    app:scale_width="31.5" />
+
+                <TextView
+                    android:id="@+id/focategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="60" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blueicon"
+                    app:scale_height="8.5"
+                    app:scale_left="1.5"
+                    app:scale_top="0"
+                    app:scale_width="8.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="종류 : "
+                    app:scale_height="10"
+                    app:scale_left="10"
+                    app:scale_textsize="5"
+                    app:scale_top="1"
+                    app:scale_width="31.5" />
+
+                <TextView
+                    android:id="@+id/fotype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="60" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blueicon"
+                    app:scale_height="8.5"
+                    app:scale_left="1.5"
+                    app:scale_top="0"
+                    app:scale_width="8.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="등록 날짜 : "
+                    app:scale_height="10"
+                    app:scale_left="10"
+                    app:scale_textsize="5"
+                    app:scale_top="1"
+                    app:scale_width="31.5" />
+
+                <TextView
+                    android:id="@+id/fodate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="60" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/blueicon"
+                    app:scale_height="8.5"
+                    app:scale_left="1.5"
+                    app:scale_top="0"
+                    app:scale_width="8.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자 : "
+                    app:scale_height="10"
+                    app:scale_left="10"
+                    app:scale_textsize="5"
+                    app:scale_top="1"
+                    app:scale_width="31.5" />
+
+                <TextView
+                    android:id="@+id/fowriter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:gravity="center"
+                    app:scale_height="10"
+                    app:scale_left="40"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="60" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_height="70"
+            app:scale_base_width="100">
+
+            <TextView
+                android:id="@+id/focontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/thinborder"
+                android:hint="  게시물 내용"
+                app:scale_height="70"
+                app:scale_left="0"
+                app:scale_textsize="6"
+                app:scale_top="0"
+                app:scale_width="100" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="13"
+                app:scale_base_width="100">
+
+                <Button
+                    android:id="@+id/editnoticebt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbt"
+                    android:onClick="onMoveFind2Edit"
+                    android:visibility="invisible"
+                    app:scale_height="10"
+                    app:scale_left="49"
+                    app:scale_top="3"
+                    app:scale_width="25" />
+
+                <Button
+                    android:id="@+id/delnoticebt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/deletebt"
+                    android:onClick="onDeleteFind2Notice"
+                    android:visibility="invisible"
+                    app:scale_height="10"
+                    app:scale_left="75"
+                    app:scale_top="3"
+                    app:scale_width="25" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:scale_base_height="10"
+                app:scale_base_width="100">
+
+                <EditText
+                    android:id="@+id/focomment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textline"
+                    android:hint="댓글을 입력하세요."
+                    app:scale_height="10"
+                    app:scale_left="0"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_width="70" />
+
+                <Button
+                    android:id="@+id/focommentok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/commentbt"
+                    app:scale_height="10"
+                    app:scale_left="70"
+                    app:scale_top="0"
+                    app:scale_width="30" />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/focommentlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"></ListView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@drawable/selectedmynotice" />
+    <item android:state_selected="false" android:drawable="@drawable/unselectedmynotice" />
+
+    <!--   선택되었을때 버튼이미지 파일명을 써준다.-->
+
+    <item android:drawable="@drawable/unselectedmynotice" />
+
+    <!--  눌리기 전 버튼이미지 파일명을 써준다..-->
+
+</selector>
